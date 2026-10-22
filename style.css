@@ -1,0 +1,160 @@
+html { scroll-behavior: smooth; }
+
+
+/* LIGHT-MODE */
+body {
+    background-image: url("Images/light-mode.jfif") !important;
+    background-size: cover !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+    background-attachment: fixed !important;
+}
+
+/* DARK-MODE */
+body.dark-mode {
+    background-image: url("Images/dark-mode.jpg") !important;
+    background-size: cover !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+    background-attachment: fixed !important;
+}
+
+/* NAVBAR */
+.navbar {
+  background: rgba(1, 12, 61, 0.9); /* semi-transparent for readability */
+  color: rgb(138, 206, 149);
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-links a, .nav-links button {
+  color: rgb(30, 131, 97);
+  margin-left: 15px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+/* HERO */
+.hero {
+  display:flex;
+  justify-content:center;
+  align-items:center;   
+  min-height: 40vh;
+  padding: 40px;
+  position: relative;
+}
+.hero .top-text{
+  position: absolute;
+  top: 20px;    
+  left: 40px;
+  background-image: url("anime.PNG");
+  padding: 30px;
+  border-radius: 8px;
+  max-width: 900px;
+  color: rgb(16, 204, 31);
+}
+
+/* ABOUT */
+.about {
+  padding: 20px;
+  background: rgba(255,255,255,0.9); /* translucent overlay */
+  text-align: center;
+  border-radius: 8px;
+  margin: 20px;
+}
+
+/* GENRE BUTTONS */
+.genre-buttons {
+  text-align: center;
+  margin: 20px;
+}
+.genre-buttons button {
+  background: #222;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  margin: 5px;
+  cursor: pointer;
+}
+.genre-buttons button:hover { background: #024105; }
+
+/* STORY GRID */
+.story-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px,1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+/* STORY CARD */
+.story-card {
+  background: rgb(59, 187, 226);
+  border: 2px solid #072a5f;
+  border-radius: 10px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: left;
+}
+.story-card img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+.story-card h3 {
+  margin: 5px 0;
+  color: #0c0075;
+}
+.story-card p {
+  font-size: 14px;
+  margin-top: 10px;
+  color: #444;
+}
+
+/* BUTTONS INSIDE CARD */
+.story-card .buttons {
+  margin-top: auto;
+  display: flex;
+  gap: 10px;
+}
+.story-card button {
+  flex: 1;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  background: #222;
+  color: white;
+  cursor: pointer;
+}
+.story-card button:hover { background: #15779e; }
+
+/* CHAPTER VIEW */
+.chapter-view {
+  padding: 20px;
+  background: rgba(255,255,255,0.9);
+  border-radius: 8px;
+  margin: 20px;
+}
+.chapter-view button {
+  margin-top: 20px;
+  padding: 10px 15px;
+  background: #222;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.chapter-view button:hover { background: #921333; }
+
+/* DARK MODE */
+.dark-mode { background: #222; color: white; }
+.dark-mode .navbar { background: #111; }
+.dark-mode .story-card { background: #424141c4; color: white; }
+.dark-mode .about { background: rgba(43, 43, 43, 0.9); }
+.dark-mode .chapter-view { background: rgba(179, 178, 178, 0.9); }
